@@ -1,2 +1,5 @@
 export * from './Header'
 export * from './About'
+export * from './SearchForm'
+export * from './Post'
+export * from './Publications'
