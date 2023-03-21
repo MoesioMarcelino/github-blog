@@ -1,4 +1,4 @@
-import { logoImg, backgroundHeaderImg } from '@/assets'
+import { logoImg, backgroundHeaderImg } from '@/assets/images'
 
 import { Container } from './styles'
 

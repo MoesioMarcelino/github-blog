@@ -4,7 +4,7 @@ interface ContainerProps {
   background: string
 }
 
-export const Container = styled.div<ContainerProps>`
+export const Container = styled.header<ContainerProps>`
   background: url(${(props) => props.background});
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,7 +15,7 @@ export const Container = styled.div<ContainerProps>`
   justify-content: center;
 
   img {
-    height: 148px;
+    height: 98px;
     width: auto;
 
     margin-top: 48px;
