@@ -14,8 +14,10 @@ export const Container = styled(containerCSS)`
   padding: 32px 40px;
 
   img {
-    height: 148px;
-    width: 148px;
+    height: 200px;
+    width: 200px;
+    max-width: 200px;
+    flex: 1;
     border-radius: 8px;
     cursor: pointer;
   }
@@ -37,19 +39,21 @@ export const Main = styled.main`
 export const Header = styled.header`
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: baseline;
   flex-wrap: wrap;
+  gap: 24px;
 
   h2 {
     color: ${(props) => props.theme['base-title']};
+    white-space: nowrap;
   }
 
   a {
     text-transform: uppercase;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     gap: 8px;
-    height: 30px;
+    height: 24px;
   }
 
   svg {

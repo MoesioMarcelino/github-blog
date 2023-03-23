@@ -1,5 +1,6 @@
 export type ProfileProps = {
   id: string
+  login: string
   bio: string
   name: string
   htmlUrl: string

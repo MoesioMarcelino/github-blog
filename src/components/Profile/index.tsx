@@ -29,7 +29,8 @@ export function Profile() {
     loadProfile()
   }, [loadProfile])
 
-  const { avatarUrl, bio, blog, followers, htmlUrl, id, name } = profile
+  const { avatarUrl, bio, blog, followers, htmlUrl, id, login, name } = profile
+  const [_, blogFormatted] = blog.split('//')
 
   if (isLoading) {
     return (
@@ -60,12 +61,12 @@ export function Profile() {
         <Footer>
           <span>
             <GithubIcon />
-            {id}
+            {login}
           </span>
           <a href={blog} target="_blank" rel="noreferrer">
             <span>
               <BuildingIcon />
-              {blog}
+              {blogFormatted}
             </span>
           </a>
           <span>
