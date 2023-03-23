@@ -96,8 +96,9 @@ export function GitHubProvider({ children }: GitHubProviderProps) {
   }, [])
 
   const getOneIssueClient = useCallback((issueId: string) => {
+    const env = import.meta.env
     return isPROD
-      ? apiClient.get<IssueItemResponse>(`/repos/ ${issueId}`)
+      ? apiClient.get<IssueItemResponse>(`/repos/${env.VITE_USERNAME_REPO}/${env.VITE_REPO_NAME}/issues/${issueId}`)
       : apiClient.get<IssueItemResponse>(`/issues/${issueId}`)
   }, [])
 

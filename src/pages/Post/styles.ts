@@ -8,7 +8,7 @@ export const Container = styled.div`
 `
 
 export const ContentContainer = styled.section`
-  margin: 40px 40px 200px;
+  padding: 40px 40px 200px;
 `
 
 export const HeaderSkeletonContainer = styled.div`

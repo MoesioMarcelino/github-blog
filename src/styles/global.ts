@@ -49,8 +49,4 @@ export const GlobalStyle = createGlobalStyle`
       transform-origin: bottom left;
     }
   }
-
-  #root {
-    height: 100vh;
-  }
 `
