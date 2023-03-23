@@ -25,6 +25,7 @@ export const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
+    cursor: pointer;
     
     display: inline-block;
     position: relative;
@@ -47,5 +48,9 @@ export const GlobalStyle = createGlobalStyle`
       transform: scaleX(1);
       transform-origin: bottom left;
     }
+  }
+
+  #root {
+    height: 100vh;
   }
 `
