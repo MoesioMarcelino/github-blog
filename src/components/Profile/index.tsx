@@ -29,8 +29,8 @@ export function Profile() {
     loadProfile()
   }, [loadProfile])
 
-  const { avatarUrl, bio, blog, followers, htmlUrl, id, login, name } = profile
-  const [_, blogFormatted] = blog.split('//')
+  const { avatarUrl, bio, blog, followers, htmlUrl, login, name } = profile
+  const [_, blogFormatted] = import.meta.env.VITE_PORTFOLIO_URL.split('//')
 
   if (isLoading) {
     return (
