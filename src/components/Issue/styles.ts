@@ -13,6 +13,7 @@ export const Container = styled.div`
   > header {
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
 
     h2 {
       color: ${(props) => props.theme['base-title']};
@@ -24,7 +25,7 @@ export const Container = styled.div`
     }
   }
 
-  p {
+  main {
     color: ${(props) => props.theme['base-text']};
 
     display: -webkit-box;

@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+  margin-top: 40px;
   max-width: 1021px;
   width: 100%;
-  margin: 72px auto 200px;
 
   > header {
     display: flex;
@@ -21,10 +21,10 @@ export const Container = styled.div`
   }
 `
 
-export const ListSection = styled.section`
+export const IssuesSection = styled.section`
   margin-top: 48px;
 
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 `

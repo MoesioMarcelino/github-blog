@@ -12,4 +12,8 @@ export const Input = styled.input`
   ::placeholder {
     color: ${(props) => props.theme['base-label']};
   }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
 `

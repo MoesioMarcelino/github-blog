@@ -1,34 +1,35 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
-  background-color: ${(props) => props.theme['base-profile']};
+const containerCSS = styled.div`
   box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.2);
-
-  width: 100%;
-  max-width: 1021px;
-  margin: 0 auto;
-
-  padding: 32px 40px;
   border-radius: 10px;
-
   margin-top: -90px;
-
   display: flex;
   gap: 32px;
+  flex-wrap: wrap;
+`
+
+export const Container = styled(containerCSS)`
+  background-color: ${(props) => props.theme['base-profile']};
+  padding: 32px 40px;
 
   img {
     height: 148px;
     width: 148px;
     border-radius: 8px;
+    cursor: pointer;
   }
 `
+
+export const ContainerSkeleton = styled(containerCSS)``
 
 export const Main = styled.main`
   display: flex;
   flex-direction: column;
+  flex: 1;
 
   > p {
-    margin-top: 8px;
+    margin-top: 16px;
     margin-bottom: 24px;
   }
 `
@@ -36,7 +37,8 @@ export const Main = styled.main`
 export const Header = styled.header`
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
 
   h2 {
     color: ${(props) => props.theme['base-title']};
@@ -47,7 +49,7 @@ export const Header = styled.header`
     display: flex;
     align-items: center;
     gap: 8px;
-    line-height: 0;
+    height: 30px;
   }
 
   svg {
@@ -61,12 +63,14 @@ export const Header = styled.header`
 export const Footer = styled.footer`
   display: flex;
   align-items: center;
-  gap: 24px;
+  flex-wrap: wrap;
+  column-gap: 24px;
 
   span {
     display: flex;
     align-items: center;
     gap: 8px;
+    height: 40px;
   }
 
   svg {
