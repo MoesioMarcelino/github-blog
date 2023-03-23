@@ -36,7 +36,7 @@ export function AboutPost({
         <h2>{title}</h2>
 
         <Footer>
-          <a href="https://moesiomarcelino.com" target="_blank">
+          <a href={import.meta.env.VITE_PORTFOLIO_URL} target="_blank">
             <span>
               <GithubIcon />
               {login}

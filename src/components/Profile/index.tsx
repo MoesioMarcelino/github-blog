@@ -41,7 +41,11 @@ export function Profile() {
 
   return (
     <Container>
-      <img src={avatarUrl} alt={name} onClick={() => window.open('https://moesiomarcelino.com', '_blank')} />
+      <img
+        src={avatarUrl}
+        alt={name}
+        onClick={() => window.open(import.meta.env.VITE_PORTFOLIO_URL, '_blank')}
+      />
 
       <Main>
         <Header>

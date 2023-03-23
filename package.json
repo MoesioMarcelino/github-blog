@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "yarn run-p dev:front dev:back",
-    "dev:front": "vite",
+    "dev:front": "vite --open",
     "dev:back": "json-server server.json -p 3333 --watch -d 500",
     "build": "tsc && vite build",
     "preview": "vite preview",
