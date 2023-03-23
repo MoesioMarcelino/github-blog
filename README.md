@@ -6,14 +6,7 @@
 
 
 <h1 align="center">GitHub Blog</h1>
-<p style="display: flex; gap: 16px; justify-content: center">
- <a href="#objetivo">Objetivo</a> •
- <a href="#roadmap">Roadmap</a> • 
- <a href="#tecnologias">Tecnologias</a> • 
- <a href="#contribuicao">Contribuição</a> • 
- <a href="#licenc-a">Licença</a> • 
- <a href="#autor">Autor</a>
-</p>
+
 <p align="center">Projeto destinado a imersão de conhecimentos do react.</p>
 
 
