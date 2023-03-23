@@ -25,7 +25,7 @@ export const GitHubContext = createContext({} as GitHubContextProps)
 
 const isPROD = import.meta.env.PROD
 const buildQuery = (query?: string) =>
-  `${query}repo:${import.meta.env.VITE_USERNAME_REPO}/github-blog`
+  `${query}repo:${import.meta.env.VITE_USERNAME_REPO}/${import.meta.env.VITE_REPO_NAME}`
 
 export function GitHubProvider({ children }: GitHubProviderProps) {
   const [profile, setProfile] = useState({} as ProfileProps)
